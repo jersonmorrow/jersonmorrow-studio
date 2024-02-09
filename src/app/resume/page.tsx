@@ -2,31 +2,6 @@ import Avatar from "@/components/avatar";
 import Social from "@/components/Social";
 import Title from "@/components/Title";
 
-const job = {
-    company: "Figuro",
-    role: "Lead Engineer",
-    yearOfStart: "2021",
-    yearOfLeaving: "2022",
-    achievements: [
-        {
-            id: 1,
-            bullet: "Since I assumed my role in 2021, I have executed critical decisions in the architecture and product design that resulted in the delivery of more than 20 versions of our technology and a diverse set of RestAPIs to optimize the sales process in our back-office.",
-        },
-        {
-            id: 2,
-            bullet: "Since I assumed my role in 2021, I have executed critical decisions in the architecture and product design that resulted in the delivery of more than 20 versions of our technology and a diverse set of RestAPIs to optimize the sales process in our back-office.",
-        },
-        {
-            id: 3,
-            bullet: "Since I assumed my role in 2021, I have executed critical decisions in the architecture and product design that resulted in the delivery of more than 20 versions of our technology and a diverse set of RestAPIs to optimize the sales process in our back-office.",
-        },
-        {
-            id: 4,
-            bullet: "Since I assumed my role in 2021, I have executed critical decisions in the architecture and product design that resulted in the delivery of more than 20 versions of our technology and a diverse set of RestAPIs to optimize the sales process in our back-office.",
-        },
-    ],
-};
-
 interface Achievement {
     id: number;
     bullet: string;
@@ -84,9 +59,6 @@ export default function Resume() {
             <Avatar />
             <Social />
             <Title width="300px" title="‣ Resume" />
-            <Job {...job}>
-                <BulletList bullets={job.achievements} />
-            </Job>
         </>
     );
 }
